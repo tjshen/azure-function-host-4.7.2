@@ -1,0 +1,123 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31717.71
+MinimumVisualStudioVersion = 15.0.0.0
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{16351B76-87CA-4A8C-80A1-3DD83A0C4AA6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "schemas", "schemas", "{67174433-2838-460C-9880-419476D02994}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "json", "json", "{3A4AF861-66F2-4C34-BB9E-69F0D392BB1A}"
+	ProjectSection(SolutionItems) = preProject
+		schemas\json\extensions.json = schemas\json\extensions.json
+		schemas\json\function.json = schemas\json\function.json
+		schemas\json\README.md = schemas\json\README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebJobs.Script", "src\WebJobs.Script\WebJobs.Script.csproj", "{BCFBE330-871A-44BE-9016-83845231230F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebJobs.Script.WebHost", "src\WebJobs.Script.WebHost\WebJobs.Script.WebHost.csproj", "{D5162088-C119-4A06-896D-E65983CAEDFD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{AFB0F5F7-A612-4F4A-94DD-8B69CABF7970}"
+	ProjectSection(SolutionItems) = preProject
+		src\WebJobs.Script.WebHost\appsettings.Development.json = src\WebJobs.Script.WebHost\appsettings.Development.json
+		src\WebJobs.Script.WebHost\appsettings.json = src\WebJobs.Script.WebHost\appsettings.json
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebJobs.Script.Tests", "test\WebJobs.Script.Tests\WebJobs.Script.Tests.csproj", "{3BA93614-3A4A-49B0-BFBC-7831E2C02BB7}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "WebJobs.Script.Tests.Shared", "test\WebJobs.Script.Tests.Shared\WebJobs.Script.Tests.Shared.shproj", "{35C9CCB7-D8B6-4161-BB0D-BCFA7C6DCFFB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{6D78685E-D299-4803-9923-12143F0CA41F}"
+	ProjectSection(SolutionItems) = preProject
+		build\common.props = build\common.props
+		build\package.props = build\package.props
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebJobs.Script.Tests.Integration", "test\WebJobs.Script.Tests.Integration\WebJobs.Script.Tests.Integration.csproj", "{EDDDAED1-0E37-4ED7-A595-63F686DEE90A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebJobs.Script.Grpc", "src\WebJobs.Script.Grpc\WebJobs.Script.Grpc.csproj", "{38920568-003E-448F-963B-41B739D1E01C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestFunctions", "test\TestFunctions\TestFunctions.csproj", "{5C308A72-5CF3-45E8-B64F-2C98F567054A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebJobs.Script.Abstractions", "src\WebJobs.Script.Abstractions\WebJobs.Script.Abstractions.csproj", "{9A522D9D-2D86-4572-B7D1-ECBFBFAF312C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9111825C-9831-4672-8223-82F489853F19}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samples", "sample\Samples.csproj", "{F381CDD6-50BD-48BC-B292-230C52589A30}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "benchmarks", "benchmarks", "{D5F77934-E468-4EE7-82F8-3B8149591174}"
+	ProjectSection(SolutionItems) = preProject
+		benchmarks\README.md = benchmarks\README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.WebJobs.Script.Benchmarks", "benchmarks\WebJobs.Script.Benchmarks\Microsoft.Azure.WebJobs.Script.Benchmarks.csproj", "{766DE3D5-4FB1-4602-9BB5-3779EECC232D}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		test\WebJobs.Script.Tests.Shared\WebJobs.Script.Tests.Shared.projitems*{35c9ccb7-d8b6-4161-bb0d-bcfa7c6dcffb}*SharedItemsImports = 13
+		test\WebJobs.Script.Tests.Shared\WebJobs.Script.Tests.Shared.projitems*{3ba93614-3a4a-49b0-bfbc-7831e2c02bb7}*SharedItemsImports = 5
+		test\WebJobs.Script.Tests.Shared\WebJobs.Script.Tests.Shared.projitems*{edddaed1-0e37-4ed7-a595-63f686dee90a}*SharedItemsImports = 5
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCFBE330-871A-44BE-9016-83845231230F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCFBE330-871A-44BE-9016-83845231230F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCFBE330-871A-44BE-9016-83845231230F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCFBE330-871A-44BE-9016-83845231230F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5162088-C119-4A06-896D-E65983CAEDFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5162088-C119-4A06-896D-E65983CAEDFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5162088-C119-4A06-896D-E65983CAEDFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5162088-C119-4A06-896D-E65983CAEDFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BA93614-3A4A-49B0-BFBC-7831E2C02BB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BA93614-3A4A-49B0-BFBC-7831E2C02BB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BA93614-3A4A-49B0-BFBC-7831E2C02BB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BA93614-3A4A-49B0-BFBC-7831E2C02BB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDDDAED1-0E37-4ED7-A595-63F686DEE90A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDDDAED1-0E37-4ED7-A595-63F686DEE90A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDDDAED1-0E37-4ED7-A595-63F686DEE90A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDDDAED1-0E37-4ED7-A595-63F686DEE90A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38920568-003E-448F-963B-41B739D1E01C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38920568-003E-448F-963B-41B739D1E01C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38920568-003E-448F-963B-41B739D1E01C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38920568-003E-448F-963B-41B739D1E01C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C308A72-5CF3-45E8-B64F-2C98F567054A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C308A72-5CF3-45E8-B64F-2C98F567054A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C308A72-5CF3-45E8-B64F-2C98F567054A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C308A72-5CF3-45E8-B64F-2C98F567054A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A522D9D-2D86-4572-B7D1-ECBFBFAF312C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A522D9D-2D86-4572-B7D1-ECBFBFAF312C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A522D9D-2D86-4572-B7D1-ECBFBFAF312C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A522D9D-2D86-4572-B7D1-ECBFBFAF312C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F381CDD6-50BD-48BC-B292-230C52589A30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F381CDD6-50BD-48BC-B292-230C52589A30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{766DE3D5-4FB1-4602-9BB5-3779EECC232D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{766DE3D5-4FB1-4602-9BB5-3779EECC232D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{766DE3D5-4FB1-4602-9BB5-3779EECC232D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{766DE3D5-4FB1-4602-9BB5-3779EECC232D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3A4AF861-66F2-4C34-BB9E-69F0D392BB1A} = {67174433-2838-460C-9880-419476D02994}
+		{BCFBE330-871A-44BE-9016-83845231230F} = {16351B76-87CA-4A8C-80A1-3DD83A0C4AA6}
+		{D5162088-C119-4A06-896D-E65983CAEDFD} = {16351B76-87CA-4A8C-80A1-3DD83A0C4AA6}
+		{3BA93614-3A4A-49B0-BFBC-7831E2C02BB7} = {AFB0F5F7-A612-4F4A-94DD-8B69CABF7970}
+		{35C9CCB7-D8B6-4161-BB0D-BCFA7C6DCFFB} = {AFB0F5F7-A612-4F4A-94DD-8B69CABF7970}
+		{EDDDAED1-0E37-4ED7-A595-63F686DEE90A} = {AFB0F5F7-A612-4F4A-94DD-8B69CABF7970}
+		{38920568-003E-448F-963B-41B739D1E01C} = {16351B76-87CA-4A8C-80A1-3DD83A0C4AA6}
+		{5C308A72-5CF3-45E8-B64F-2C98F567054A} = {AFB0F5F7-A612-4F4A-94DD-8B69CABF7970}
+		{9A522D9D-2D86-4572-B7D1-ECBFBFAF312C} = {16351B76-87CA-4A8C-80A1-3DD83A0C4AA6}
+		{766DE3D5-4FB1-4602-9BB5-3779EECC232D} = {D5F77934-E468-4EE7-82F8-3B8149591174}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {85400884-5FFD-4C27-A571-58CB3C8CAAC5}
+	EndGlobalSection
+EndGlobal
